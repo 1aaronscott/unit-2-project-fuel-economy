@@ -37,6 +37,8 @@ column1 = dbc.Col(
 
             ❌ RUN is the only intelligent running app that uses sophisticated deep neural net machine learning to make your run smarter because we believe in ML driven workouts.
 
+            ❌MPG is an app for exploring the fuel economy rating from the EPA.
+
             """
         ),
         dcc.Link(dbc.Button('Call To Action', color='primary'), href='/predictions')
