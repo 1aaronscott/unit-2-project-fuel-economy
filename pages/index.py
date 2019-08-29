@@ -31,17 +31,21 @@ column1 = dbc.Col(
         
             ## Value Proposition
 
-            Emphasize how the app will benefit users. Don't emphasize the underlying technology.
-
-            ✅ RUN is a running app that adapts to your fitness levels and designs personalized workouts to help you improve your running.
-
-            ❌ RUN is the only intelligent running app that uses sophisticated deep neural net machine learning to make your run smarter because we believe in ML driven workouts.
-
-            ❌MPG is an app for exploring the fuel economy rating from the EPA.
+            Peak Oil. Remeber that? No one talks about that anymore and with the state of the world we may never even get there. But just in case we do, this web app will attempt to model fuel economy based on published, historical
+            data from the Evironmental Protection Agency. Since they are still by far the most common, the focus is on conventional fuel-type vehicles.
 
             """
         ),
-        dcc.Link(dbc.Button('Call To Action', color='primary'), href='/predictions')
+        dcc.Link(dbc.Button('What is my MPG?', color='primary'), href='/predictions')
+#            Emphasize how the app will benefit users. Don't emphasize the underlying technology.
+#
+#            ✅ RUN is a running app that adapts to your fitness levels and designs personalized workouts to help you improve your running.
+#
+#            ❌ RUN is the only intelligent running app that uses sophisticated deep neural net machine learning to make your run smarter because we believe in ML driven workouts.
+#
+#            ❌MPG is an app for exploring the fuel economy rating from the EPA.
+
+
     ],
     md=4,
 )
