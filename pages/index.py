@@ -29,7 +29,7 @@ column1 = dbc.Col(
         dcc.Markdown(
             """
         
-            ## Value Proposition
+            ## Fuel Economy Predictor
 
             Peak Oil. Remember that? No one talks about that anymore and with the state of the world we may never even get there. But just in case we do, this web app will attempt to model fuel economy based on published, historical
             data from the Environmental Protection Agency. Since they are still by far the most common, the focus is on conventional fuel-type vehicles.
@@ -50,14 +50,19 @@ column1 = dbc.Col(
     md=4,
 )
 
-gapminder = px.data.gapminder()
-fig = px.scatter(gapminder.query("year==2007"), x="gdpPercap", y="lifeExp", size="pop", color="continent",
-           hover_name="country", log_x=True, size_max=60)
+#gapminder = px.data.gapminder()
+#fig = px.scatter(gapminder.query("year==2007"), x="gdpPercap", y="lifeExp", size="pop", color="continent",
+#           hover_name="country", log_x=True, size_max=60)
+#
+
+
 
 column2 = dbc.Col(
     [
-        dcc.Graph(figure=fig),
+        html.Img(src='assets/what MPG Logo hex.gif', className='img-fluid')
+        #dcc.Graph(figure=fig),
     ]
 )
 
 layout = dbc.Row([column1, column2])
+#layout = dbc.Row([column1])

@@ -10,14 +10,18 @@ column1 = dbc.Col(
     [
         dcc.Markdown(
             """
-        
+            
             ## Insights
-
-
             """
         ),
+        html.Img(src='assets/PDP Heatmap.png', className='img-fluid'),
+        html.Img(src='assets/shap1.png', className='img-fluid'),
+        html.Img(src='assets/shap2.png', className='img-fluid'),
+        html.Img(src='assets/shap3.png', className='img-fluid'),
+        html.Img(src='assets/shap4.png', className='img-fluid'),
+        
     ],
-    md=4,
+    md=12,
 )
 
 

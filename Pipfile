@@ -18,6 +18,7 @@ category-encoders = "*"
 xgboost = "*"
 numpy = "*"
 pdpbox = "*"
+psutil = "*"
 
 [requires]
 python_version = "3.7"

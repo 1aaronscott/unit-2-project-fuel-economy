@@ -12,6 +12,13 @@ randomforest = load('assets/randomforest.joblib')
 
 column1 = dbc.Col(
     [
+        html.H2('Predicted MPG', className='mb-5'), 
+        html.Div(id='prediction-content', className='lead')        
+    ]
+)
+
+column2 = dbc.Col(
+    [
         dcc.Markdown(
             """
         
@@ -293,15 +300,9 @@ column1 = dbc.Col(
 #        html.H2('Predicted MPG', className='mb-5'),
 #        html.Div(id='prediction-content', className='lead'),
        ],
-    md=4,
+    md=12,
 )
 
-column2 = dbc.Col(
-    [
-        html.H2('Predicted MPG', className='mb-5'), 
-        html.Div(id='prediction-content', className='lead')        
-    ]
-)
 
 layout = dbc.Row([column1, column2])
 #layout = dbc.Row([column1])

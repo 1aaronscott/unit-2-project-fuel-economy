@@ -35,7 +35,7 @@ navbar = dbc.NavbarSimple(
 #        dbc.NavItem(dcc.Link('Test Page by Aaron', href='/fuel', className='nav-link')),
     ],
     sticky='top',
-    color='light', 
+    color='darkorange', 
     light=True, 
     dark=False
 )
