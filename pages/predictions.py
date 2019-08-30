@@ -53,7 +53,7 @@ column2 = dbc.Col(
 #            ],
 #            value = 4,
 #        ),
-        dcc.Markdown("#### Engine Displacement"),
+        dcc.Markdown("#### Engine Displacement (L)"),
         dcc.Slider(
             id='Engine_Displacement', 
             min=0.9, 
@@ -284,9 +284,9 @@ column2 = dbc.Col(
         dcc.Dropdown(
             id='Passenger_Vol_4D',
             options = [
-                {'label': '0', 'value': 0}
+                {'label': '95', 'value': 95}
             ],
-            value = 0,
+            value = 95,
         ),
         dcc.Markdown('#### Conventional'),
         dcc.Dropdown(
